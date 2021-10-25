@@ -8,10 +8,19 @@ import{MatSliderModule} from '@angular/material/slider';
 import {MatTableModule} from '@angular/material/table'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { MemberFormComponent } from './member-form/member-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     MemberListComponent,
+    MemberFormComponent,
     
   ],
   imports: [
@@ -21,6 +30,13 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule,
     MatIconModule,
     MatTableModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    FlexLayoutModule,
+    HttpClientModule
 
   ],
   providers: [],
