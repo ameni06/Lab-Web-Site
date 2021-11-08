@@ -15,6 +15,11 @@ export class MemberListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  delete(currentID : any){
+    this.Ms. removeMemberById(currentID).then(()=>this.datasource=this.Ms.tab)
+
+  }
  
 }
 

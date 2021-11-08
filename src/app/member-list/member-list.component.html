@@ -16,10 +16,12 @@
   </tbody>
   </table>
 -->
+
 <div fxLayout="row" fxLayoutAlign="end center" >
-  <button routerLink="/Form">
+  <button mat-stroked-button  color="accent" routerLink="/Form">
     <mat-icon>add</mat-icon>Create new</button></div>
-  
+  <p></p>
+
   <table mat-table [dataSource]="datasource" class="mat-elevation-z8">
   
     <ng-container matColumnDef="id">
@@ -63,8 +65,15 @@
     <ng-container matColumnDef="actions">
       <th mat-header-cell class="px-12" *matHeaderCellDef></th>
       <td mat-cell   *matCellDef="let element">
-       <mat-icon>edit</mat-icon> 
-        <mat-icon>delete</mat-icon>
+        
+       <button [routerLink]="element.id+'/edit'">
+        <mat-icon>edit</mat-icon> 
+      </button>
+
+
+       <button (click)="delete(element.id)">
+         <mat-icon>delete</mat-icon>
+        </button>
         
       </td>
       
