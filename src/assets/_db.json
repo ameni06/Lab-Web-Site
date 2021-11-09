@@ -2,9 +2,17 @@
     "members":
 [{
     "id": "fd2545",
-    "cin":"55555",
+    "cin":"11111148",
 "name":"ameni",
 "createdDate":"2021-09-28",
 "cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
    "type":"etudiant"
+},
+{
+    "id": "rb2545",
+    "cin":"25147836",
+"name":"fatma",
+"createdDate":"2021-11-08",
+"cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+   "type":"enseignant"
 }]}

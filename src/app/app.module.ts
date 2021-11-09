@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ConfirmDialogModule } from './confirm-dialog.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MemberListComponent } from './member-list/member-list.component';
@@ -17,11 +17,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MemberListComponent,
     MemberFormComponent,
+   
+    
+
     
   ],
   imports: [
@@ -38,7 +42,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatInputModule,
     FlexLayoutModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ConfirmDialogModule,
 
   ],
   providers: [],

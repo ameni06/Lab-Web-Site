@@ -16,6 +16,10 @@
   </tbody>
   </table>
 -->
+<br>
+<br>
+<mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
 
 <div fxLayout="row" fxLayoutAlign="end center" >
   <button mat-stroked-button  color="accent" routerLink="/Form">

@@ -37,8 +37,14 @@ export class MemberService {
   }
   
   removeMemberById(currentID : any):Promise<void>{
+    //this.httpClient.delete<Member>("linkToRestAPI").toPromise();
     this.tab =this.tab.filter(item => item.id !=currentID)
     return new Promise  (resolve => resolve())
+  }
+  GetAll():Promise<Member[]>
+  {
+    //this.httpClient.get<Member>("linkToRestAPI").toPromise();
+    return new Promise  (resolve => resolve(this.tab));
   }
   }
  
